@@ -41,3 +41,18 @@
     height: 45%;
     background: #303030;
 }
+
+.text-layer{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 94%;
+    height: 94%;
+    padding: 1%;
+    background-color: #EEEEEE;
+    overflow:auto;
+}
+
+.heading{
+   font-size: 24px; 
+}
