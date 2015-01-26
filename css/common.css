@@ -51,6 +51,10 @@ header ul{
     padding: 0;
 }
 
+header li{
+    margin-left: 20px;
+}
+
 header a{
     color: #EEEEEE;
     text-decoration: none;
