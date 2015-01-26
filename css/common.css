@@ -6,7 +6,7 @@ html,body{
 
 #content{
     width: 100%;
-    height: calc(100% - 30px);
+    height: calc(100% - 45px);
     margin: 0;
     padding: 0;
 }
@@ -24,11 +24,11 @@ html,body{
 }
 
 header{
-    height: 30px;
+    height: 45px;
     padding: 0 10px; 
     background-color: #303030;
     color: #EEEEEE;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 header *{
