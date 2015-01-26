@@ -11,6 +11,18 @@ html,body{
     padding: 0;
 }
 
+#top-pane{
+    width: 100%;
+    height: 50%;
+    background: #FFE68C;
+}
+
+#bottom-pane{
+    width: 100%;
+    height: 50%;
+    background: #76AF5C;
+}
+
 header{
     height: 8%;
     padding: 0 10px; 
