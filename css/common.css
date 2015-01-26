@@ -2,6 +2,7 @@ html,body{
     width: 100%;
     height: 100%;
     margin: 0;
+    font-family: 'Chivo';
 }
 
 #content{
@@ -28,7 +29,7 @@ header{
     padding: 0 10px; 
     background-color: #303030;
     color: #EEEEEE;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 header *{
