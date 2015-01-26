@@ -6,7 +6,7 @@ html,body{
 
 #content{
     width: 100%;
-    height: 92%;
+    height: calc(100% - 30px);
     margin: 0;
     padding: 0;
 }
@@ -24,10 +24,11 @@ html,body{
 }
 
 header{
-    height: 8%;
+    height: 30px;
     padding: 0 10px; 
     background-color: #303030;
     color: #EEEEEE;
+    font-size: 20px;
 }
 
 header *{
@@ -47,7 +48,6 @@ header nav:after{
 header ul{
     margin: 0; 
     padding: 0;
-    font-size: 90%;
 }
 
 header a{
