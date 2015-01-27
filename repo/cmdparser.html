@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="utf-8" />
+    <title>mocchit.io</title>
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/repo.css" />
+</head>
+<body>
+    <header>
+        <span><b>mocchit.io</b></span>
+        <nav>
+            <ul>
+                <li><a href="http://mocchit.hatenablog.com">blog</a></li>
+                <li><a href="https://github.com/mocchit">github</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <div id="top-pane">
+            <div id="project-name">cmdparser</div>
+        </div>
+        <div id="bottom-pane">
+
+        </div>
+        <div id="code-pane">
+            <div class="text-layer">
+                <span class="heading">cmdparser</span>
+                <p>
+                    cmdparserとは，Rubyスクリプトにコマンドの実装を支援するライブラリです．</p>
+                <span class="heading">install</span>
+                <p>
+                    <pre>
+                        gem install cmdparser</pre>
+                </p>
+                <span class="heading">usage</span>
+                <p>
+                    Rubyスクリプトのコマンドとして，cmd，other，-o，helpを用意した．
+                    また，cmdコマンドが実行された場合のみ実行されるサブコマンドがsubcmdとなる．</p>
+                <p>
+                    filename:cmd.rb<br />
+                    <pre>
+                        reqiure 'cmdparser'
+
+                        cmd = CmdParser.new do
+                          on 'cmd' do |arg|
+                            print "cmd->#{arg}\n"
+                          end
+                          on ['other','-o'] do
+                            print 'other cmd\n'
+                          end
+                          on 'cmd','subcmd' do |x,y|
+                            print "(#{x},#{y})\n"
+                          end
+                        end
+
+                        cmd.on 'help' do
+                          print "help!!!!\n"
+                        end
+
+                        cmd.invoke</pre>
+                </p>
+            </div>
+            <div id="arrow-pane">&lt;=</div>
+            <div id="terminal-pane">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
