@@ -41,11 +41,7 @@ body{
     font-size: 24px;
     overflow: auto;
 }
+
 #bottom-pane > div[name="#project"]{
     display: block;
 }
-
-#bottom-pane > div span{
-    font-size: 30px;
-}
-
