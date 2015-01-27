@@ -58,5 +58,13 @@
 }
 
 .text-layer p{
+    margin: 0;
     text-indent: 1em;
+}
+
+.text-layer pre{
+    margin: 0;
+    padding: 13px;
+    background-color: #FFE4B5;
+    font-size: 15px;
 }

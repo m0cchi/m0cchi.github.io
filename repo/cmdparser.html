@@ -26,9 +26,41 @@
         </div>
         <div id="code-pane">
             <div class="text-layer">
-                <p class="heading">cmdparser</p>
-                <p>body</p>
+                <span class="heading">cmdparser</span>
+                <p>
+                    cmdparserとは，Rubyスクリプトにコマンドの実装を支援するライブラリです．</p>
+                <span class="heading">install</span>
+                <p>
+                    <pre>
+                        gem install cmdparser</pre>
+                </p>
+                <span class="heading">usage</span>
+                <p>
+                    Rubyスクリプトのコマンドとして，cmd，other，-o，helpを用意した．
+                    また，cmdコマンドが実行された場合のみ実行されるサブコマンドがsubcmdとなる．</p>
+                <p>
+                    filename:cmd.rb<br />
+                    <pre>
+                        reqiure 'cmdparser'
 
+                        cmd = CmdParser.new do
+                          on 'cmd' do |arg|
+                            print "cmd->#{arg}\n"
+                          end
+                          on ['other','-o'] do
+                            print 'other cmd\n'
+                          end
+                          on 'cmd','subcmd' do |x,y|
+                            print "(#{x},#{y})\n"
+                          end
+                        end
+
+                        cmd.on 'help' do
+                          print "help!!!!\n"
+                        end
+
+                        cmd.invoke</pre>
+                </p>
             </div>
             <div id="arrow-pane">&lt;=</div>
             <div id="terminal-pane">
