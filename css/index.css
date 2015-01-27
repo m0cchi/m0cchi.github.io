@@ -49,3 +49,21 @@ body{
 #bottom-pane > div > p{
     margin: 0;
 }
+
+#bottom-pane > div > ul{
+    margin: 0;
+}
+
+#bottom-pane > div > ul > li{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+
+#bottom-pane > div > ul > li:before{
+    content: "->";
+}
+
+#bottom-pane > div > ul > li ul *{
+    display: inline-block;
+}
