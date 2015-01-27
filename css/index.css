@@ -45,3 +45,7 @@ body{
 #bottom-pane > div[name="#project"]{
     display: block;
 }
+
+#bottom-pane > div > p{
+    margin: 0;
+}
