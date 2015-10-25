@@ -66,10 +66,21 @@ a:visited {
 /**    background-color: #8370D3; **/
     background-color: #055F87;
     border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 30px;
 }
 
 #lower-3 {
-    /** NOP **/
+    height: 30%;
+    background-color: #055F87;
+}
+
+#lower-3 > div {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    background-color: #BE3939;
 }
 
 #lower-4 {
