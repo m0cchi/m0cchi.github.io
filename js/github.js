@@ -1,5 +1,5 @@
-//github api
-//author: mocchit
+//github api util
+//author: m0cchi
 var github = github || {};
 (function(user){
     var URL ={
@@ -25,4 +25,4 @@ var github = github || {};
         };
         xhr.send(null);
     }
-})('mocchit');
+})('m0cchi');
